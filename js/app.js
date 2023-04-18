@@ -25,7 +25,7 @@ const unidos = comision + " " + entidad;
 console.log(unidos)
 
 let usuario = prompt("Ingrese Facundo Brochero o Profesor (usuario)");
-let clave = prompt("Ingrese su Contraseña")
+let clave = prompt("Ingrese su Contraseña (1234)")
 
 console.log(usuario + " " + clave)
 
