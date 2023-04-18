@@ -1,3 +1,27 @@
+let bienvenida = "BIENVENIDOS A LA PAGINA"
+let usuario = 0;
+let clave = 0;
+
+function IngresarAlSitio() {
+
+    usuario = prompt("Ingrese Facundo Brochero o Profesor (usuario)");
+    clave = prompt("Ingrese su Contraseña (1234)");
+
+    if (usuario == "Facundo Brochero" || usuario == "Profesor") {
+        while (clave != 1234) {
+            clave = prompt("Clave incorrecta");
+        }
+        alert("usuario y clave correcto");
+        alert(bienvenida);
+    } else {
+        alert("Usuario Incorrecto");
+        window.location = "index.html";
+    }
+}
+
+IngresarAlSitio();
+
+
 // Variables
 
 let nombre = "Facundo";
@@ -16,7 +40,6 @@ console.log(entidad)
 console.log(cursando)
 
 const comision = 39515
-const bienvenida = "BIENVENIDOS A LA PAGINA"
 
 console.log(comision)
 
@@ -24,21 +47,5 @@ const unidos = comision + " " + entidad;
 
 console.log(unidos)
 
-let usuario = prompt("Ingrese Facundo Brochero o Profesor (usuario)");
-let clave = prompt("Ingrese su Contraseña (1234)")
-
 console.log(usuario + " " + clave)
-
-
-if (usuario == "Facundo Brochero" || usuario == "Profesor") {
-    while (clave != 1234) {
-        clave = prompt("Clave incorrecta")
-    }
-    alert("usuario y clave correcto")
-    alert(bienvenida)
-} else {
-    alert("Usuario Incorrecto")
-    window.location = "index.html"
-}
-
 
