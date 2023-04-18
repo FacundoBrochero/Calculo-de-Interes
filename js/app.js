@@ -24,16 +24,19 @@ const unidos = comision + " " + entidad;
 
 console.log(unidos)
 
-const usuario = prompt("Ingrese Facundo Brochero (usuario)");
+const usuario = prompt("Ingrese Facundo Brochero o Profesor (usuario)");
 const clave = prompt("Ingrese su Contraseña")
 
 console.log(usuario + " " + clave)
 
-if (usuario == "Facundo Brochero") {
+if (usuario == "Facundo Brochero" || usuario == "Profesor") {
     alert("usuario correcto")
     alert(bienvenida)
 } else {
     alert("Usuario Incorrecto")
+    window.location = "index.html"
 }
+
+
 
 
