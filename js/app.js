@@ -21,7 +21,6 @@ function IngresarAlSitio() {
 
 IngresarAlSitio();
 
-
 // Variables
 
 let nombre = "Facundo";
